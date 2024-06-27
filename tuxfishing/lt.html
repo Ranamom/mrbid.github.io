@@ -1,0 +1,60 @@
+<!doctypehtml>
+  <html lang=en-us>
+    <head>
+      <title>Tux Fishing</title>
+      <meta charset=utf-8>
+      <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+      <link href='data:application/manifest+json,{"display":"standalone","orientation":"landscape"}' rel=manifest>
+      <meta content=yes name=apple-mobile-web-app-capable>
+      <meta content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0" name=viewport>
+      <link href=favicon.png rel="shortcut icon">
+      <link href=favicon.png rel=apple-touch-icon>
+      <link href=favicon.png rel=apple-touch-icon-precomposed>
+      <meta content=favicon.png property=og:image>
+      <meta content=favicon.png property=twitter:image:src>
+      <meta content=favicon.png name=image>
+      <meta content=favicon.png itemprop=image>
+      <meta content=favicon.png name=og:image>
+      <meta content="3D Fishing Game" itemprop=name>
+      <meta content="3D Fishing Game" name=description>
+      <meta content="3D Fishing Game" name=og:description>
+      <meta content=website name=og:type>
+      <meta content=https://github.com/mrbid/tuxfishing name=og:title>
+      <meta content=github.com/mrbid/tuxfishing name=og:site_name>
+      <meta content=https://github.com/mrbid/tuxfishing name=og:url>
+      <meta content=#ffbf00 name=theme-color>
+      <meta content=summary_large_image name=twitter:card>
+      <style>
+        canvas {
+          border: 0 none;
+          outline: 0;
+          background-color: #000
+        }
+
+        * {
+          margin: 0;
+          padding: 0
+        }
+
+        body,
+        html {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background-color: #000
+        }
+      </style>
+    </head>
+    <body><canvas id=canvas onclick=this.focus(),this.requestPointerLock() oncontextmenu=event.preventDefault() tabindex=-1></canvas>
+      <script>
+        var Module = {canvas: document.getElementById("canvas")}
+        window.addEventListener('load', function () {
+          alert("L1")
+        })
+        document.addEventListener("DOMContentLoaded", function(event){
+          alert("L2")
+        });
+      </script>
+      <script async src=index.js></script>
+    </body>
+  </html>
